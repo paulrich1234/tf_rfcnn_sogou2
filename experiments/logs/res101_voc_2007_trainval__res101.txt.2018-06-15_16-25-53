@@ -1,0 +1,36 @@
++ echo Logging output to experiments/logs/res101_voc_2007_trainval__res101.txt.2018-06-15_16-25-53
+Logging output to experiments/logs/res101_voc_2007_trainval__res101.txt.2018-06-15_16-25-53
++ set +x
++ '[' '!' -f output/res101/voc_2007_trainval/default/res101_faster_rcnn_iter_200000.ckpt.index ']'
++ [[ ! -z '' ]]
++ CUDA_VISIBLE_DEVICES=0
++ time python ./tools/trainval_net2.py --weight data/imagenet_weights/res101.ckpt --imdb voc_2007_trainval --imdbval voc_2007_test --iters 200000 --cfg experiments/cfgs/res101_rfcn.yml --net res101 --set ANCHOR_SCALES '[8,16,32]' ANCHOR_RATIOS '[0.5,1,2]' TRAIN.STEPSIZE 50000
+Traceback (most recent call last):
+  File "./tools/trainval_net2.py", line 15, in <module>
+    from datasets.factory import get_imdb
+  File "/home/pc/tf_rfcnc2/tools/../lib/datasets/factory.py", line 15, in <module>
+    from datasets.coco import coco
+  File "/home/pc/tf_rfcnc2/tools/../lib/datasets/coco.py", line 23, in <module>
+    from pycocotools.coco import COCO
+  File "/home/pc/tf_rfcnc2/tools/../data/coco/PythonAPI/pycocotools/coco.py", line 49, in <module>
+    import matplotlib.pyplot as plt
+  File "/usr/local/lib/python2.7/dist-packages/matplotlib/pyplot.py", line 115, in <module>
+    _backend_mod, new_figure_manager, draw_if_interactive, _show = pylab_setup()
+  File "/usr/local/lib/python2.7/dist-packages/matplotlib/backends/__init__.py", line 62, in pylab_setup
+    [backend_name], 0)
+  File "/usr/local/lib/python2.7/dist-packages/matplotlib/backends/backend_tkagg.py", line 4, in <module>
+    from . import tkagg  # Paint image to Tk photo blitter extension.
+  File "/usr/local/lib/python2.7/dist-packages/matplotlib/backends/tkagg.py", line 5, in <module>
+    from six.moves import tkinter as Tk
+  File "/usr/local/lib/python2.7/dist-packages/six.py", line 203, in load_module
+    mod = mod._resolve()
+  File "/usr/local/lib/python2.7/dist-packages/six.py", line 115, in _resolve
+    return _import_module(self.mod)
+  File "/usr/local/lib/python2.7/dist-packages/six.py", line 82, in _import_module
+    __import__(name)
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 42, in <module>
+    raise ImportError, str(msg) + ', please install the python-tk package'
+ImportError: No module named _tkinter, please install the python-tk package
+Command exited with non-zero status 1
+0.85user 0.29system 0:01.25elapsed 91%CPU (0avgtext+0avgdata 172044maxresident)k
+2112inputs+184outputs (4major+40925minor)pagefaults 0swaps

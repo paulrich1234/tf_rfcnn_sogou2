@@ -1,0 +1,62 @@
+一、环境配置：
+
+centos系统安装gcc
+download anaconda2 
+wget https://repo.anaconda.com/archive/Anaconda2-5.2.0-Linux-x86_64.sh
+sh Anaconda2-5.2.0-Linux-x86_64.sh
+
+一路yes
+conda会添加路径到bashrc中  所以需要
+source ~/.bashrc
+然后使用conda命令
+
+创建虚拟环境
+conda create -n predict_pics python=2.7.13
+
+
+source activate predict_pics
+
+每次更换系统环境都需要makeclean 和make一下  
+需要安装g++ gcc  4.8
+
+
+
+make clean 和make之后
+setup有两个文件 一个是gpu版本的  一个是cpu版本的。
+
+
+cpu gpu版本需要修改的文件有
+：lib/model/nms_wrapper.py  force_cpu=True
+lib/model/config.py C.USE_GPU_NMS=False
+
+
+cuda 9.0
+
+
+
+(predict_pics) [root@localhost ~]# conda install numpy
+
+
+
+
+需要清空demo文件夹、regions文件夹、
+
+二、训练步骤
+1.先放大图片到对应的尺寸，然后使用labelImg标记，生成1.xml 和对应的1.jpg图片。
+2.然后将xml 文件放到tf_rfcnn_sogou/data/VOCdevkit2007/VOC2007/Annotations目录下
+3.将对应的图片文件放到tf_rfcnn_sogou/data/VOCdevkit2007/VOC2007/JPEGImages目录下
+4.将lib目录下make clean/ make
+5.在tf_rfcnn_sogou/data/VOCdevkit2007/VOC2007 然后python list.py 生成val.txt 复制到imageset中layout 和main  
+6.修改tf_rfcnn_sogou/experiments/cfgs/res101 rfcnc.yml 和tf_rfcnn_sogou/lib/datasets/pascal_voc.py   config.py  tf_rfcnn_sogou/tools/demo2.py中的类别和类别总数
+7.chmod+x train_faster_rcnn.sh  为其增加权限。
+8.训练前需要将data/cache下的文件清空 
+9.标记时不能使用数字类别。
+10.
+
+
+
+
+
+
+
+

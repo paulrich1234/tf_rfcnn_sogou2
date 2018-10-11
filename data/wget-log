@@ -1,0 +1,50 @@
+
+--2017-08-18 16:22:14--  (尝试次数： 2)  http://ladoga.graphics.cs.cmu.edu/xinleic/tf-faster-rcnn/res101/voc_0712_80k-110k.tgz
+正在连接 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)|128.2.220.68|:80... 已连接。
+已发出 HTTP 请求，正在等待回应... 读取文件头错误 (连接被对方重设)。
+重试中。
+
+--2017-08-18 16:25:50--  (尝试次数： 3)  http://ladoga.graphics.cs.cmu.edu/xinleic/tf-faster-rcnn/res101/voc_0712_80k-110k.tgz
+正在连接 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)|128.2.220.68|:80... 已连接。
+已发出 HTTP 请求，正在等待回应... 读取文件头错误 (连接被对方重设)。
+重试中。
+
+--2017-08-18 16:31:05--  (尝试次数： 4)  http://ladoga.graphics.cs.cmu.edu/xinleic/tf-faster-rcnn/res101/voc_0712_80k-110k.tgz
+正在连接 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)|128.2.220.68|:80... 已连接。
+已发出 HTTP 请求，正在等待回应... 读取文件头错误 (连接被对方重设)。
+重试中。
+
+--2017-08-18 16:34:33--  (尝试次数： 5)  http://ladoga.graphics.cs.cmu.edu/xinleic/tf-faster-rcnn/res101/voc_0712_80k-110k.tgz
+正在连接 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)|128.2.220.68|:80... 已连接。
+已发出 HTTP 请求，正在等待回应... 读取文件头错误 (连接被对方重设)。
+重试中。
+
+--2017-08-18 16:38:06--  (尝试次数： 6)  http://ladoga.graphics.cs.cmu.edu/xinleic/tf-faster-rcnn/res101/voc_0712_80k-110k.tgz
+正在连接 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)|128.2.220.68|:80... 已连接。
+已发出 HTTP 请求，正在等待回应... 读取文件头错误 (连接被对方重设)。
+重试中。
+
+--2017-08-18 16:42:38--  (尝试次数： 7)  http://ladoga.graphics.cs.cmu.edu/xinleic/tf-faster-rcnn/res101/voc_0712_80k-110k.tgz
+正在连接 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)|128.2.220.68|:80... 已连接。
+已发出 HTTP 请求，正在等待回应... 读取文件头错误 (连接被对方重设)。
+重试中。
+
+--2017-08-18 16:46:10--  (尝试次数： 8)  http://ladoga.graphics.cs.cmu.edu/xinleic/tf-faster-rcnn/res101/voc_0712_80k-110k.tgz
+正在连接 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)|128.2.220.68|:80... 已连接。
+已发出 HTTP 请求，正在等待回应... 读取文件头错误 (连接被对方重设)。
+重试中。
+
+--2017-08-18 16:51:13--  (尝试次数： 9)  http://ladoga.graphics.cs.cmu.edu/xinleic/tf-faster-rcnn/res101/voc_0712_80k-110k.tgz
+正在连接 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)|128.2.220.68|:80... 已连接。
+已发出 HTTP 请求，正在等待回应... 读取文件头错误 (连接被对方重设)。
+重试中。
+
+--2017-08-18 16:56:29--  (尝试次数：10)  http://ladoga.graphics.cs.cmu.edu/xinleic/tf-faster-rcnn/res101/voc_0712_80k-110k.tgz
+正在连接 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)|128.2.220.68|:80... 已连接。
+已发出 HTTP 请求，正在等待回应... 读取文件头错误 (连接超时)。
+重试中。
+
+--2017-08-18 17:11:41--  (尝试次数：11)  http://ladoga.graphics.cs.cmu.edu/xinleic/tf-faster-rcnn/res101/voc_0712_80k-110k.tgz
+正在连接 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)|128.2.220.68|:80... 失败：没有到主机的路由。
+正在解析主机 ladoga.graphics.cs.cmu.edu (ladoga.graphics.cs.cmu.edu)... 失败：域名解析暂时失败。
+wget: 无法解析主机地址 “ladoga.graphics.cs.cmu.edu”

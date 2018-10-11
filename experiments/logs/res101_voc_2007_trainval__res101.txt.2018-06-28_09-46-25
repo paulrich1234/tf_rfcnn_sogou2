@@ -1,0 +1,873 @@
++ echo Logging output to experiments/logs/res101_voc_2007_trainval__res101.txt.2018-06-28_09-46-25
+Logging output to experiments/logs/res101_voc_2007_trainval__res101.txt.2018-06-28_09-46-25
++ set +x
++ '[' '!' -f output/res101/voc_2007_trainval/default/res101_faster_rcnn_iter_200000.ckpt.index ']'
++ [[ ! -z '' ]]
++ CUDA_VISIBLE_DEVICES=0
++ time python ./tools/trainval_net2.py --weight data/imagenet_weights/res101.ckpt --imdb voc_2007_trainval --imdbval voc_2007_test --iters 200000 --cfg experiments/cfgs/res101_rfcn.yml --net res101 --set ANCHOR_SCALES '[8,16,32]' ANCHOR_RATIOS '[0.5,1,2]' TRAIN.STEPSIZE 50000
+Called with args:
+Namespace(cfg_file='experiments/cfgs/res101_rfcn.yml', imdb_name='voc_2007_trainval', imdbval_name='voc_2007_test', max_iters=200000, net='res101', set_cfgs=['ANCHOR_SCALES', '[8,16,32]', 'ANCHOR_RATIOS', '[0.5,1,2]', 'TRAIN.STEPSIZE', '50000'], tag=None, weight='data/imagenet_weights/res101.ckpt')
+Using config:
+{'ANCHOR_RATIOS': [0.5, 1, 2],
+ 'ANCHOR_SCALES': [8, 16, 32],
+ 'CLASSES': 27,
+ 'DATA_DIR': '/home/pc/tf_rfcnc/data',
+ 'DEDUP_BOXES': 0.0625,
+ 'EPS': 1e-14,
+ 'EXP_DIR': 'res101',
+ 'FOCAL_LOSS': False,
+ 'GPU_ID': 0,
+ 'K': 8,
+ 'MATLAB': 'matlab',
+ 'PIXEL_MEANS': array([[[102.9801, 115.9465, 122.7717]]]),
+ 'POOLING_MODE': 'crop',
+ 'POOLING_SIZE': 7,
+ 'RESNET': {'BN_TRAIN': False, 'FIXED_BLOCKS': 1, 'MAX_POOL': False},
+ 'RNG_SEED': 3,
+ 'ROOT_DIR': '/home/pc/tf_rfcnc',
+ 'TEST': {'BBOX_REG': True,
+          'HAS_RPN': True,
+          'MAX_SIZE': 1000,
+          'MODE': 'nms',
+          'NMS': 0.3,
+          'PROPOSAL_METHOD': 'gt',
+          'RPN_NMS_THRESH': 0.7,
+          'RPN_POST_NMS_TOP_N': 300,
+          'RPN_PRE_NMS_TOP_N': 6000,
+          'RPN_TOP_N': 5000,
+          'SCALES': [600],
+          'SVM': False},
+ 'TRAIN': {'ASPECT_GROUPING': False,
+           'BATCH_SIZE': 300,
+           'BBOX_INSIDE_WEIGHTS': [1.0, 1.0, 1.0, 1.0],
+           'BBOX_NORMALIZE_MEANS': [0.0, 0.0, 0.0, 0.0],
+           'BBOX_NORMALIZE_STDS': [0.1, 0.1, 0.2, 0.2],
+           'BBOX_NORMALIZE_TARGETS': True,
+           'BBOX_NORMALIZE_TARGETS_PRECOMPUTED': True,
+           'BBOX_REG': True,
+           'BBOX_THRESH': 0.5,
+           'BG_THRESH_HI': 0.5,
+           'BG_THRESH_LO': 0.0,
+           'BIAS_DECAY': False,
+           'DISPLAY': 20,
+           'DOUBLE_BIAS': False,
+           'FG_FRACTION': 0.25,
+           'FG_THRESH': 0.5,
+           'GAMMA': 0.1,
+           'HAS_RPN': True,
+           'IMS_PER_BATCH': 1,
+           'LEARNING_RATE': 0.001,
+           'MAX_SIZE': 1000,
+           'MOMENTUM': 0.9,
+           'OHEM': False,
+           'OHEM_B': 128,
+           'OHEM_NMS_THRESH': 0.7,
+           'PROPOSAL_METHOD': 'gt',
+           'RPN_BATCHSIZE': 256,
+           'RPN_BBOX_INSIDE_WEIGHTS': [1.0, 1.0, 1.0, 1.0],
+           'RPN_CLOBBER_POSITIVES': False,
+           'RPN_FG_FRACTION': 0.5,
+           'RPN_NEGATIVE_OVERLAP': 0.3,
+           'RPN_NMS_THRESH': 0.7,
+           'RPN_POSITIVE_OVERLAP': 0.7,
+           'RPN_POSITIVE_WEIGHT': -1.0,
+           'RPN_POST_NMS_TOP_N': 2000,
+           'RPN_PRE_NMS_TOP_N': 12000,
+           'SCALES': [600],
+           'SNAPSHOT_ITERS': 5000,
+           'SNAPSHOT_KEPT': 3,
+           'SNAPSHOT_PREFIX': 'res101_faster_rcnn',
+           'STEPSIZE': 50000,
+           'SUMMARY_INTERVAL': 60,
+           'TRUNCATED': False,
+           'USE_ALL_GT': True,
+           'USE_FLIPPED': True,
+           'USE_GT': False,
+           'WEIGHT_DECAY': 0.0001},
+ 'USE_GPU_NMS': False}
+Loaded dataset `voc_2007_trainval` for training
+Set proposal method: gt
+Appending horizontally-flipped training examples...
+alarms
+aligns
+alphas
+amigas
+ammine
+angles
+angsts
+anneal
+annuls
+aphtha
+archly
+atelic
+audial
+baguet
+balsam
+banger
+banner
+baulks
+beaned
+bedpan
+before
+betime
+bettas
+bibbed
+bicarb
+biggin
+birded
+blabby
+blowby
+bolson
+borate
+breeks
+bromid
+bugles
+burnie
+busbar
+busted
+cabman
+caesar
+calcic
+canula
+casked
+casual
+cesses
+charks
+cibols
+cicala
+cisted
+clangs
+clinic
+coifed
+cortex
+coving
+coyest
+credos
+cursor
+daimio
+deauce
+deixis
+dilute
+disced
+doughs
+drongo
+dryads
+dueted
+ectype
+eerily
+eludes
+embers
+engild
+enolic
+enroot
+espial
+falser
+fauces
+ferime
+fetial
+flames
+flappy
+fleece
+flicks
+foists
+fumier
+fundus
+fuzils
+gambol
+garter
+gayals
+gelant
+gestic
+gibber
+glitzy
+glooms
+goings
+gooney
+goosed
+gossip
+grazes
+grebes
+groats
+gunned
+guzzle
+halted
+hanked
+hawaia
+hazels
+henrys
+herbed
+hewing
+hiatus
+howlet
+iammer
+iarrah
+inking
+inlays
+kiting
+koruny
+kouros
+kurtas
+lankly
+lastly
+latent
+lattin
+lazied
+lector
+lictor
+lifers
+limits
+limply
+lochan
+longer
+lunacy
+macaco
+macons
+maimer
+manage
+mayhem
+measle
+melons
+merely
+metres
+miaows
+milium
+minnow
+molded
+mommas
+morose
+mousse
+murmur
+muscat
+myasis
+mylars
+naffed
+nebula
+nibbed
+nicely
+nomism
+nuchal
+nudism
+nurses
+obvert
+octavo
+oedema
+oleate
+onagri
+opined
+osmols
+osmund
+pacify
+packly
+padres
+parian
+parked
+parous
+parvis
+pavans
+phonos
+photog
+pimped
+piraya
+places
+planed
+played
+pleads
+plunky
+plyers
+ponied
+portal
+possum
+potful
+pouchy
+prater
+presto
+prutah
+punish
+purred
+pyrans
+quells
+quezal
+quilts
+quippu
+razzes
+reacts
+recall
+redtop
+reechy
+refers
+regear
+rerise
+resaws
+retune
+revers
+reworn
+rodent
+rotgut
+rutted
+sabres
+sadden
+salmis
+samshu
+scarps
+scents
+scream
+seabed
+sedate
+shamas
+shanti
+shiles
+shmear
+shotes
+sifted
+sirups
+sistra
+sitars
+sixths
+slobby
+sloids
+smeary
+smoker
+smokey
+snarls
+sniffy
+snoops
+snowed
+sopped
+sowans
+sowars
+spader
+spines
+sponge
+spools
+sprint
+strobe
+stroma
+sumach
+tamper
+tautoy
+teases
+teflon
+tenour
+territ
+tholos
+thrave
+tichle
+tidied
+timing
+tincts
+titans
+toping
+topped
+torrid
+towers
+tracks
+trokes
+turbid
+tutued
+tweeze
+unhusk
+unless
+unsets
+upheld
+uraeus
+usages
+valine
+valves
+veeiay
+velvet
+vended
+veneer
+vilely
+waiver
+warder
+waveys
+whirry
+wilily
+wiling
+winoes
+wolver
+woolly
+wurzel
+zaires
+wrote gt roidb to /home/pc/tf_rfcnc/data/cache/voc_2007_trainval_gt_roidb.pkl
+done
+Preparing training data...
+done
+602 roidb entrie s
+Output will be saved to `/home/pc/tf_rfcnc/output/res101/voc_2007_trainval/default`
+TensorFlow summaries will be saved to `/home/pc/tf_rfcnc/tensorboard/res101/voc_2007_trainval/default`
+Loaded dataset `voc_2007_test` for training
+Set proposal method: gt
+Preparing training data...
+alarms
+aligns
+alphas
+amigas
+ammine
+angles
+angsts
+anneal
+annuls
+aphtha
+archly
+atelic
+audial
+baguet
+balsam
+banger
+banner
+baulks
+beaned
+bedpan
+before
+betime
+bettas
+bibbed
+bicarb
+biggin
+birded
+blabby
+blowby
+bolson
+borate
+breeks
+bromid
+bugles
+burnie
+busbar
+busted
+cabman
+caesar
+calcic
+canula
+casked
+casual
+cesses
+charks
+cibols
+cicala
+cisted
+clangs
+clinic
+coifed
+cortex
+coving
+coyest
+credos
+cursor
+daimio
+deauce
+deixis
+dilute
+disced
+doughs
+drongo
+dryads
+dueted
+ectype
+eerily
+eludes
+embers
+engild
+enolic
+enroot
+espial
+falser
+fauces
+ferime
+fetial
+flames
+flappy
+fleece
+flicks
+foists
+fumier
+fundus
+fuzils
+gambol
+garter
+gayals
+gelant
+gestic
+gibber
+glitzy
+glooms
+goings
+gooney
+goosed
+gossip
+grazes
+grebes
+groats
+gunned
+guzzle
+halted
+hanked
+hawaia
+hazels
+henrys
+herbed
+hewing
+hiatus
+howlet
+iammer
+iarrah
+inking
+inlays
+kiting
+koruny
+kouros
+kurtas
+lankly
+lastly
+latent
+lattin
+lazied
+lector
+lictor
+lifers
+limits
+limply
+lochan
+longer
+lunacy
+macaco
+macons
+maimer
+manage
+mayhem
+measle
+melons
+merely
+metres
+miaows
+milium
+minnow
+molded
+mommas
+morose
+mousse
+murmur
+muscat
+myasis
+mylars
+naffed
+nebula
+nibbed
+nicely
+nomism
+nuchal
+nudism
+nurses
+obvert
+octavo
+oedema
+oleate
+onagri
+opined
+osmols
+osmund
+pacify
+packly
+padres
+parian
+parked
+parous
+parvis
+pavans
+phonos
+photog
+pimped
+piraya
+places
+planed
+played
+pleads
+plunky
+plyers
+ponied
+portal
+possum
+potful
+pouchy
+prater
+presto
+prutah
+punish
+purred
+pyrans
+quells
+quezal
+quilts
+quippu
+razzes
+reacts
+recall
+redtop
+reechy
+refers
+regear
+rerise
+resaws
+retune
+revers
+reworn
+rodent
+rotgut
+rutted
+sabres
+sadden
+salmis
+samshu
+scarps
+scents
+scream
+seabed
+sedate
+shamas
+shanti
+shiles
+shmear
+shotes
+sifted
+sirups
+sistra
+sitars
+sixths
+slobby
+sloids
+smeary
+smoker
+smokey
+snarls
+sniffy
+snoops
+snowed
+sopped
+sowans
+sowars
+spader
+spines
+sponge
+spools
+sprint
+strobe
+stroma
+sumach
+tamper
+tautoy
+teases
+teflon
+tenour
+territ
+tholos
+thrave
+tichle
+tidied
+timing
+tincts
+titans
+toping
+topped
+torrid
+towers
+tracks
+trokes
+turbid
+tutued
+tweeze
+unhusk
+unless
+unsets
+upheld
+uraeus
+usages
+valine
+valves
+veeiay
+velvet
+vended
+veneer
+vilely
+waiver
+warder
+waveys
+whirry
+wilily
+wiling
+winoes
+wolver
+woolly
+wurzel
+zaires
+wrote gt roidb to /home/pc/tf_rfcnc/data/cache/voc_2007_test_gt_roidb.pkl
+done
+301 validation roidb entries
+Filtered 0 roidb entries: 602 -> 602
+Filtered 0 roidb entries: 301 -> 301
+2018-06-28 09:46:47.824744: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Solving...
+[<tf.Variable 'resnet_v1_101/block2/unit_1/bottleneck_v1/shortcut/weights:0' shape=(1, 1, 256, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_1/bottleneck_v1/conv1/weights:0' shape=(1, 1, 256, 128) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_1/bottleneck_v1/conv2/weights:0' shape=(3, 3, 128, 128) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_1/bottleneck_v1/conv3/weights:0' shape=(1, 1, 128, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_2/bottleneck_v1/conv1/weights:0' shape=(1, 1, 512, 128) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_2/bottleneck_v1/conv2/weights:0' shape=(3, 3, 128, 128) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_2/bottleneck_v1/conv3/weights:0' shape=(1, 1, 128, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_3/bottleneck_v1/conv1/weights:0' shape=(1, 1, 512, 128) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_3/bottleneck_v1/conv2/weights:0' shape=(3, 3, 128, 128) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_3/bottleneck_v1/conv3/weights:0' shape=(1, 1, 128, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_4/bottleneck_v1/conv1/weights:0' shape=(1, 1, 512, 128) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_4/bottleneck_v1/conv2/weights:0' shape=(3, 3, 128, 128) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block2/unit_4/bottleneck_v1/conv3/weights:0' shape=(1, 1, 128, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_1/bottleneck_v1/shortcut/weights:0' shape=(1, 1, 512, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_1/bottleneck_v1/conv1/weights:0' shape=(1, 1, 512, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_1/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_1/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_2/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_2/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_2/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_3/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_3/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_3/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_4/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_4/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_4/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_5/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_5/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_5/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_6/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_6/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_6/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_7/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_7/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_7/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_8/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_8/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_8/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_9/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_9/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_9/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_10/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_10/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_10/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_11/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_11/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_11/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_12/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_12/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_12/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_13/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_13/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_13/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_14/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_14/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_14/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_15/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_15/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_15/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_16/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_16/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_16/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_17/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_17/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_17/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_18/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_18/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_18/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_19/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_19/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_19/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_20/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_20/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_20/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_21/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_21/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_21/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_22/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_22/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_22/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_23/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_23/bottleneck_v1/conv2/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block3/unit_23/bottleneck_v1/conv3/weights:0' shape=(1, 1, 256, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block4/unit_1/bottleneck_v1/shortcut/weights:0' shape=(1, 1, 1024, 2048) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block4/unit_1/bottleneck_v1/conv1/weights:0' shape=(1, 1, 1024, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block4/unit_1/bottleneck_v1/conv2/weights:0' shape=(3, 3, 512, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block4/unit_1/bottleneck_v1/conv3/weights:0' shape=(1, 1, 512, 2048) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block4/unit_2/bottleneck_v1/conv1/weights:0' shape=(1, 1, 2048, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block4/unit_2/bottleneck_v1/conv2/weights:0' shape=(3, 3, 512, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block4/unit_2/bottleneck_v1/conv3/weights:0' shape=(1, 1, 512, 2048) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block4/unit_3/bottleneck_v1/conv1/weights:0' shape=(1, 1, 2048, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block4/unit_3/bottleneck_v1/conv2/weights:0' shape=(3, 3, 512, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/block4/unit_3/bottleneck_v1/conv3/weights:0' shape=(1, 1, 512, 2048) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/rpn_conv/3x3/weights:0' shape=(3, 3, 2048, 512) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/rpn_conv/3x3/biases:0' shape=(512,) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/rpn_cls_score/weights:0' shape=(1, 1, 512, 18) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/rpn_cls_score/biases:0' shape=(18,) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/rpn_bbox_pred/weights:0' shape=(1, 1, 512, 36) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/rpn_bbox_pred/biases:0' shape=(36,) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/refined_reduce_depth/weights:0' shape=(1, 1, 2048, 1024) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/refined_reduce_depth/biases:0' shape=(1024,) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/refined_classes/weights:0' shape=(1, 1, 1024, 1728) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/refined_classes/biases:0' shape=(1728,) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/refined_bbox/weights:0' shape=(1, 1, 1024, 6912) dtype=float32_ref>,
+ <tf.Variable 'resnet_v1_101/refined_bbox/biases:0' shape=(6912,) dtype=float32_ref>]
+/usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/gradients_impl.py:100: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+Restorining model snapshots from /home/pc/tf_rfcnc/output/res101/voc_2007_trainval/default/res101_faster_rcnn_iter_35000.ckpt
+Traceback (most recent call last):
+  File "./tools/trainval_net2.py", line 141, in <module>
+    max_iters=args.max_iters)
+  File "/home/pc/tf_rfcnc/tools/../lib/model/train_val.py", line 342, in train_net
+    sw.train_model(sess, max_iters)
+  File "/home/pc/tf_rfcnc/tools/../lib/model/train_val.py", line 183, in train_model
+    self.saver.restore(sess, str(sfiles[-1]))
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/training/saver.py", line 1802, in restore
+    {self.saver_def.filename_tensor_name: save_path})
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 900, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1135, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1316, in _do_run
+    run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1335, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Assign requires shapes of both tensors to match. lhs shape= [6912] rhs shape= [9472]
+	 [[Node: save/Assign_615 = Assign[T=DT_FLOAT, _class=["loc:@resnet_v1_101/refined_bbox/biases"], use_locking=true, validate_shape=true, _device="/job:localhost/replica:0/task:0/device:CPU:0"](resnet_v1_101/refined_bbox/biases/Momentum, save/RestoreV2:615)]]
+
+Caused by op u'save/Assign_615', defined at:
+  File "./tools/trainval_net2.py", line 141, in <module>
+    max_iters=args.max_iters)
+  File "/home/pc/tf_rfcnc/tools/../lib/model/train_val.py", line 342, in train_net
+    sw.train_model(sess, max_iters)
+  File "/home/pc/tf_rfcnc/tools/../lib/model/train_val.py", line 132, in train_model
+    self.saver = tf.train.Saver(max_to_keep=100000)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/training/saver.py", line 1338, in __init__
+    self.build()
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/training/saver.py", line 1347, in build
+    self._build(self._filename, build_save=True, build_restore=True)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/training/saver.py", line 1384, in _build
+    build_save=build_save, build_restore=build_restore)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/training/saver.py", line 835, in _build_internal
+    restore_sequentially, reshape)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/training/saver.py", line 494, in _AddRestoreOps
+    assign_ops.append(saveable.restore(saveable_tensors, shapes))
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/training/saver.py", line 185, in restore
+    self.op.get_shape().is_fully_defined())
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/state_ops.py", line 283, in assign
+    validate_shape=validate_shape)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/gen_state_ops.py", line 60, in assign
+    use_locking=use_locking, name=name)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+InvalidArgumentError (see above for traceback): Assign requires shapes of both tensors to match. lhs shape= [6912] rhs shape= [9472]
+	 [[Node: save/Assign_615 = Assign[T=DT_FLOAT, _class=["loc:@resnet_v1_101/refined_bbox/biases"], use_locking=true, validate_shape=true, _device="/job:localhost/replica:0/task:0/device:CPU:0"](resnet_v1_101/refined_bbox/biases/Momentum, save/RestoreV2:615)]]
+
+Command exited with non-zero status 1
+16.84user 2.27system 0:41.70elapsed 45%CPU (0avgtext+0avgdata 1079232maxresident)k
+1363208inputs+17328outputs (839major+361839minor)pagefaults 0swaps

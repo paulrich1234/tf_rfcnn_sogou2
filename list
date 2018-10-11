@@ -1,0 +1,2 @@
+cd /home/wjl/tf_rfcn
+python /home/wjl/tf_rfcn/list.py

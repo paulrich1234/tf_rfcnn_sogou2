@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc81934e-89ca-4647-8ebe-ae08ef84ca41" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/data/coco/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/LuaAPI/CocoApi.lua" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/LuaAPI/CocoApi.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/LuaAPI/MaskApi.lua" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/LuaAPI/MaskApi.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/LuaAPI/cocoDemo.lua" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/LuaAPI/cocoDemo.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/LuaAPI/env.lua" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/LuaAPI/env.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/LuaAPI/init.lua" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/LuaAPI/init.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/LuaAPI/rocks/coco-scm-1.rockspec" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/LuaAPI/rocks/coco-scm-1.rockspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/MatlabAPI/CocoApi.m" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/MatlabAPI/CocoApi.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/MatlabAPI/CocoEval.m" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/MatlabAPI/CocoEval.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/MatlabAPI/CocoUtils.m" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/MatlabAPI/CocoUtils.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/MatlabAPI/MaskApi.m" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/MatlabAPI/MaskApi.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/MatlabAPI/cocoDemo.m" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/MatlabAPI/cocoDemo.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/MatlabAPI/evalDemo.m" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/MatlabAPI/evalDemo.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/MatlabAPI/gason.m" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/MatlabAPI/gason.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/MatlabAPI/private/gasonMex.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/MatlabAPI/private/gasonMex.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/MatlabAPI/private/getPrmDflt.m" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/MatlabAPI/private/getPrmDflt.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/MatlabAPI/private/maskApiMex.c" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/MatlabAPI/private/maskApiMex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/PythonAPI/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/PythonAPI/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/PythonAPI/pycocoDemo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/PythonAPI/pycocoDemo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/PythonAPI/pycocoEvalDemo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/PythonAPI/pycocoEvalDemo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/PythonAPI/pycocotools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/PythonAPI/pycocotools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/PythonAPI/pycocotools/_mask.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/PythonAPI/pycocotools/_mask.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/PythonAPI/pycocotools/coco.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/PythonAPI/pycocotools/coco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/PythonAPI/pycocotools/cocoeval.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/PythonAPI/pycocotools/cocoeval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/PythonAPI/pycocotools/mask.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/PythonAPI/pycocotools/mask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/PythonAPI/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/PythonAPI/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/common/gason.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/common/gason.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/common/gason.h" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/common/gason.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/common/maskApi.c" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/common/maskApi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/common/maskApi.h" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/common/maskApi.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/license.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/results/captions_val2014_fakecap_results.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/results/captions_val2014_fakecap_results.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/results/instances_val2014_fakebbox100_results.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/results/instances_val2014_fakebbox100_results.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/results/instances_val2014_fakesegm100_results.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/results/instances_val2014_fakesegm100_results.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/results/person_keypoints_val2014_fakekeypoints100_results.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/results/person_keypoints_val2014_fakekeypoints100_results.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco/results/val2014_fake_eval_res.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco/results/val2014_fake_eval_res.txt" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1537800401">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="3" />
+          <entry key="jpg" value="20" />
+          <entry key="py" value="20" />
+          <entry key="run2" value="2" />
+          <entry key="sh" value="1" />
+          <entry key="train2" value="1" />
+          <entry key="txt" value="2" />
+          <entry key="yml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="20" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Python" value="20" />
+          <entry key="YAML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="182" />
+          <entry key="run2" value="1" />
+          <entry key="sh" value="11" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Python" value="182" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cap6.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/predict_pic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/demo/ts6.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/list.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resize.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>assert (boxes[:, 2] &gt;= boxes[:, 0]).all()</find>
+      <find>classes</find>
+      <find>result</find>
+      <find>CLASSES</find>
+      <find>Preparing training data</find>
+      <find>voc_2007_trainval</find>
+      <find>Appending horizontally-flipped training examples</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/lib</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/data/coco" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data/VOCdevkit2007/VOC2007/list.py" />
+        <option value="$PROJECT_DIR$/images.txt" />
+        <option value="$PROJECT_DIR$/lib/model/test.py" />
+        <option value="$PROJECT_DIR$/resize.py" />
+        <option value="$PROJECT_DIR$/output.csv" />
+        <option value="$PROJECT_DIR$/experiments/scripts/train_faster_rcnn2.sh" />
+        <option value="$PROJECT_DIR$/experiments/cfgs/res101_rfcn.yml" />
+        <option value="$PROJECT_DIR$/lib/model/config.py" />
+        <option value="$PROJECT_DIR$/lib/roi_data_layer/roidb.py" />
+        <option value="$PROJECT_DIR$/tools/trainval_net2.py" />
+        <option value="$PROJECT_DIR$/lib/datasets/factory.py" />
+        <option value="$PROJECT_DIR$/tools/demo2e.py" />
+        <option value="$PROJECT_DIR$/tools/demo.py" />
+        <option value="$PROJECT_DIR$/lib/datasets/pascal_voc.py" />
+        <option value="$PROJECT_DIR$/data/resize.py" />
+        <option value="$PROJECT_DIR$/tools/demo2.py" />
+        <option value="$PROJECT_DIR$/cap6.py" />
+        <option value="$PROJECT_DIR$/run2" />
+        <option value="$PROJECT_DIR$/predict_pic.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="607" />
+    <option name="y" value="24" />
+    <option name="width" value="1399" />
+    <option name="height" value="992" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tf_rfcnc3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tf_rfcnc3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tf_rfcnc3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tf_rfcnc3" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tf_rfcnc2" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data/demo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.predict_pic">
+    <configuration name="list" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf_rfcnc (2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data/VOCdevkit2007/VOC2007" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/VOCdevkit2007/VOC2007/list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="predict_pic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf_rfcnc (2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predict_pic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.list" />
+      <item itemvalue="Python.predict_pic" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.predict_pic" />
+        <item itemvalue="Python.list" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc81934e-89ca-4647-8ebe-ae08ef84ca41" name="Default" comment="" />
+      <created>1530933182037</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530933182037</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945416" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32845187" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.14435147" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.16527197" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/new.csv" />
+    <entry file="file://$PROJECT_DIR$/output.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/scripts/train_faster_rcnn.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/datasets/coco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3495">
+          <caret line="252" column="48" selection-start-line="252" selection-start-column="48" selection-end-line="252" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/setup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/setup-gpu.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/cfgs/res101.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/roi_data_layer/roidb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#327#365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/scripts/train_faster_rcnn2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/trainval_net2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1635">
+          <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+          <folding>
+            <element signature="e#272#310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/cfgs/res101-lg.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/cfgs/res101_rfcn.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/test_net.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/test_net3.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/demo2e.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/datasets/factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="226" column="9" selection-start-line="226" selection-start-column="9" selection-end-line="226" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/datasets/pascal_voc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2805">
+          <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/model/train_val.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4260">
+          <caret line="291" column="11" selection-start-line="291" selection-start-column="11" selection-end-line="291" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/model/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="195" column="33" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/499.jpg" />
+    <entry file="file://$PROJECT_DIR$/figure/490.jpg" />
+    <entry file="file://$PROJECT_DIR$/figure/489.jpg" />
+    <entry file="file://$PROJECT_DIR$/figure/466.jpg" />
+    <entry file="file://$PROJECT_DIR$/data/demo/466.jpg" />
+    <entry file="file://$PROJECT_DIR$/data/demo/491.jpg" />
+    <entry file="file://$PROJECT_DIR$/figure/491.jpg" />
+    <entry file="file://$PROJECT_DIR$/regions/491.jpg.csv" />
+    <entry file="file://$PROJECT_DIR$/cap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/demo2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3675">
+          <caret line="250" column="25" selection-start-line="250" selection-start-column="25" selection-end-line="250" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/2010334074.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/1896965504.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/1887359290.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/1844517618.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/1294081814.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/854578197.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/1041550717.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/602238169.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/264052894.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figure/119224113.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4.py" />
+    <entry file="file://$PROJECT_DIR$/data/resize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regions/ts6.jpg.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/demo/ts6.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predict_pic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

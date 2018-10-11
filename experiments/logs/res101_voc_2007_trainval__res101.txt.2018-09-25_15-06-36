@@ -1,0 +1,11 @@
++ echo Logging output to experiments/logs/res101_voc_2007_trainval__res101.txt.2018-09-25_15-06-36
+Logging output to experiments/logs/res101_voc_2007_trainval__res101.txt.2018-09-25_15-06-36
++ set +x
++ '[' '!' -f output/res101/voc_2007_trainval/default/res101_faster_rcnn_iter_203000.ckpt.index ']'
++ [[ ! -z '' ]]
++ CUDA_VISIBLE_DEVICES=0
++ time /lustre/home/zhaowei/anaconda2/bin/python ./tools/trainval_net2.py --weight data/imagenet_weights/res101.ckpt --imdb voc_2007_trainval --imdbval voc_2007_test --iters 203000 --cfg experiments/cfgs/res101_rfcn.yml --net res101 --set ANCHOR_SCALES '[8,16,32]' ANCHOR_RATIOS '[0.5,1,2]' TRAIN.STEPSIZE 50000
+time: cannot run /lustre/home/zhaowei/anaconda2/bin/python: No such file or directory
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed ?%CPU (0avgtext+0avgdata 1188maxresident)k
+0inputs+0outputs (0major+28minor)pagefaults 0swaps
