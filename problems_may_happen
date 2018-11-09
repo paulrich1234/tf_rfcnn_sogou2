@@ -51,7 +51,7 @@ cuda 9.0
 7.chmod+x train_faster_rcnn.sh  为其增加权限。
 8.训练前需要将data/cache下的文件清空 
 9.标记时不能使用数字类别。
-10.
+10.sh train2
 
 
 
